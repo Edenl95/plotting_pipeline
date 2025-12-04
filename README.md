@@ -1,7 +1,7 @@
 # Stability Plot
 ## Description
 
-The plot_stability script automates the visualization of protein mutation stability data from MAVISp-generated CSV files. Its primary goal is to generate bar plots of ΔΔG values for multiple methods (FoldX, Rosetta, RaSP), optionally including standard deviations. The script processes CSV files, detects the relevant columns for each method, and splits the data into chunks for plotting if there are many mutations.
+The plot_stab script automates the visualization of protein mutation stability data from MAVISp-generated CSV files. Its primary goal is to generate bar plots of ΔΔG values for multiple methods (FoldX, Rosetta, RaSP), optionally including standard deviations. The script processes CSV files, detects the relevant columns for each method, and splits the data into chunks for plotting if there are many mutations.
 **Important**: Make sure the input CSV file is either copied into the working folder where you run the script, or provide the full path to the CSV file with the -c option.
 
 The script automatically:
@@ -49,10 +49,10 @@ module load python/3.10/modulefile
 2. Run the script:
 ```bash
 # CSV in same folder
-python3 plot_stability.py -c my_mutations.csv -o plots/ -n 10
+python3 plot_stab.py -c my_mutations.csv -o plots/ -n 10
 
 # CSV in a different folder
-python3 plot_stability.py -c /full/path/to/my_mutations.csv -o plots/ -n 10
+python3 plot_stab.py -c /full/path/to/my_mutations.csv -o plots/ -n 10
 ```
 
 **This will:**
